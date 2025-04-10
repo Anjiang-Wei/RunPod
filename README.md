@@ -1,6 +1,8 @@
 # Environment setup (with Runpod)
 
-First of all, `cd /workspace`
+# ❗ First of all, `cd /workspace`
+
+Avoid losing all the data
 
 ## Basic system tools
 
@@ -39,7 +41,6 @@ You will need this for licensed open-source models.
 Run
 ```
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda.sh
-sha256sum miniconda.sh
 bash miniconda.sh
 ```
 Then you can create conda environments.
