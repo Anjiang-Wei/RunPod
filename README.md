@@ -1,5 +1,7 @@
 # Environment setup (with Runpod)
 
+First of all, `cd /workspace`
+
 ## Basic system tools
 
 On Runpod, you need to install sudo first
@@ -36,10 +38,12 @@ You will need this for licensed open-source models.
 
 Run
 ```
-chmod +x conda_install.sh
-./conda_install.sh
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda.sh
+sha256sum miniconda.sh
+bash miniconda.sh
 ```
-Then you can create conda environments (fresh or from our `conda_requirements.yml`).
+Then you can create conda environments.
 ```
-conda env create -f conda_requirements.yml
+conda create -n myenv python=3.10
+conda activate myenv
 ```
