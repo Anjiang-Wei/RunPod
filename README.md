@@ -36,6 +36,20 @@ git config --global user.email "1020681930@qq.com"
 git config --global user.name "Anjiang-Wei"
 ```
 
+```
+mkdir -p /root/.ssh
+cp /workspace/.ssh/id_ed25519 /root/.ssh/id_ed25519
+chmod 600 /root/.ssh/id_ed25519
+chown root:root /root/.ssh/id_ed25519
+ssh-add /root/.ssh/id_ed25519
+```
+
+For other users:
+```
+git config user.email "$EMAIL_ADDRESS"
+git config user.name "GITHUB_USERID"
+```
+
 ## HuggingFace
 
 Configure HuggingFace CLI
