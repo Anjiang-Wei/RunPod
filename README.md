@@ -4,6 +4,10 @@
 
 Avoid losing all the data
 
+```
+echo 'cd /workspace' >> ~/.bashrc
+```
+
 ## Basic system tools
 
 On Runpod, you need to install sudo first
