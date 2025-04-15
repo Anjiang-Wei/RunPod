@@ -5,7 +5,11 @@
 Avoid losing all the data
 
 ```
-echo 'cd /workspace' >> ~/.bashrc
+cat << 'EOF' >> ~/.bashrc
+export PATH="/workspace/miniconda3/bin:$PATH"
+export HF_HOME="/workspace/.cache/huggingface"
+cd /workspace
+EOF
 ```
 
 ## Basic system tools
