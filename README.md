@@ -72,6 +72,12 @@ git config user.email "$EMAIL_ADDRESS"
 git config user.name "GITHUB_USERID"
 ```
 
+## SSH
+```
+cp /workspace/.ssh/authorized_keys ~/.ssh/authorized_keys
+```
+
+
 ## HuggingFace
 
 Configure HuggingFace CLI
