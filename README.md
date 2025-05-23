@@ -8,6 +8,11 @@ Avoid losing all the data
 cat << 'EOF' >> ~/.bashrc
 
 export HF_HOME="/workspace/.cache/huggingface"
+export UV_CACHE_DIR=/workspace/.cache/uv
+export PIP_CACHE_DIR=/workspace/.cache/pip
+
+alias du='du -h --max-depth=1 .'
+
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
