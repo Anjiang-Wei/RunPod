@@ -45,7 +45,7 @@ apt-get install sudo
 
 Run
 ```
-chmod +x system_install.sh
+cd /workspace/RunPod
 ./system_install.sh
 ```
 
