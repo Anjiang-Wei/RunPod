@@ -71,6 +71,17 @@ eval "$(ssh-agent -s)"
 ssh-add /root/.ssh/id_ed25519
 ```
 
+```
+# private key (only you should be able to read/write)
+chmod 600 ~/.ssh/id_ed25519
+
+# public key (can be world-readable)
+chmod 644 ~/.ssh/id_ed25519.pub
+
+# directory should be accessible only by you
+chmod 700 ~/.ssh
+```
+
 For other users:
 ```
 git config user.email "$EMAIL_ADDRESS"
