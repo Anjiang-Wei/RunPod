@@ -72,6 +72,7 @@ ssh-add /root/.ssh/id_ed25519
 ```
 
 ```
+sudo chown -R ubuntu:ubuntu ~/.ssh
 # private key (only you should be able to read/write)
 chmod 600 ~/.ssh/id_ed25519
 
